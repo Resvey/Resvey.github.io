@@ -1,0 +1,370 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resvey</title>
+    <link rel="shortcut icon" href="brand-logo.png" />
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+
+    <div class="container-fluid" id="app">
+      <nav class="navbar is-dark">
+        <div class="navbar-brand">
+            <!-- <a class="navbar-item" href="">
+            </a> -->
+          <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+          <div class="navbar-start">
+
+          </div>
+          <div class="navbar-end">
+            <a class="navbar-item"  v-on:click="home">
+              <strong> Home</strong>
+            </a>
+            <a class="navbar-item" v-on:click="about">
+              <strong>About</strong>
+            </a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="">
+               <strong>Our Services</strong>
+              </a>
+              <div class="navbar-dropdown is-boxed">
+                <!-- <a class="navbar-item" href="">
+                  Overview
+                </a> -->
+                <!-- <hr class="navbar-divider"> -->
+                <a class="navbar-item" href="">
+                  Resvey Clinical 
+                </a>
+              </div>
+            </div>
+            <a class="navbar-item" v-on:click="careers">
+              <strong>Careers</strong>
+            </a>
+            <div class="navbar-item">
+              <div class="field is-grouped">
+                <p class="control">
+                  <a class="bd-tw-button button is-info" data-social-network="Twitter"  target="_blank" href="https://twitter.com/resveyservices">
+                    <span class="icon">
+                      <i class="fab fa-twitter"></i>
+                    </span>
+                    <span>
+                      Follow us Twitter
+                    </span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="field is-grouped">
+                <p class="control">
+                  <a class="bd-tw-button button is-info" data-social-network="Twitter"  target="_blank" href="https://twitter.com/resveyservices">
+                    <span class="icon">
+                      <i class="fab fa-twitter"></i>
+                    </span>
+                    <span>
+                      Follow us Twitter
+                    </span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </nav>
+    </div>
+
+    <section class="section" id="app-2">
+
+      <div class="container" v-if="seenHome">
+        <div class="columns">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <div class="content">
+              <div class="columns">
+                <div class="column">
+                  <img src="brand-logo.png" alt="RESVEY: Educational Technology" width="200" height="250">
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <div class="card-content">
+                      <p class="title">
+                        “Resvey is a research firm that utilizes information technology tools to provide services.”
+                      </p>
+                      <p class="subtitle">
+                        Charles Besidonne, <i>CEO</i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="container" v-if="seenAbout">
+        <div class="columns">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <div class="content">
+              <h3>
+                Our Story
+              </h3>
+              <p>
+                Resvey began in a little room in Nottingham, and was conceived during a masters project on new products development. 
+                within months of project completion, the company began offering research services commercially. 
+                Resvey is constantly evolving and  has become an organization with the vision to operate as a global entity with the sole commitment to doing good and making impact. 
+                We use information technology tools, project management methodology and research to achieve our goals. 
+                We value fun, commitment and excellence and our company runs with a family mindset among our members. 
+                Our mission is to turn simple ideas Into scalable innovative solutions, therefore we look forward to having dedicated project partners and committed members to our family.
+              </p>
+            </div>
+       
+          </div>
+        </div>
+      </div>
+
+      <div class="container" v-if="seenCareer">
+        <div class="columns">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <div class="content">
+              <div class="columns">
+                <div class="column">
+                  <div class="card">
+                    <div class="card-content">
+                      <p class="title">
+                        “If you are motivated and innovative with a family mindset, then Resvey is the place for you.”
+                      </p>
+                      <p class="subtitle">
+                        Charles Besidonne, <i>CEO</i>
+                      </p>
+                    </div>
+                  </div>
+                   <h2>
+                     Open Positions
+                   </h2>
+                   <p>We are currently hiring Interns</p>
+                   <ul>
+                     <li>
+                       Data Science Intern
+                     </li>
+                     <li>
+                       Software Engineer Intern
+                     </li>
+                     <li>
+                       UX/UI Developer Intern
+                     </li>
+                   </ul>
+                   <p>To apply to our open positions click <a  target="_blank" href="https://forms.gle/puwLuAimdgKpgDuv8">here</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+
+   <section class="hero is-medium" style="background-color: #ffffff;">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-8-desktop is-offset-2-desktop">
+              <h2 class="subtitle is-4" style="text-align: center;">
+                    <a class="bd-tw-button button is-success is-large"  target="_blank" href="https://resvey-limited.github.io/" >
+                    <span>
+                      Resvey Clinical EAP Portal
+                    </span>
+                    <span class="icon">
+                      <i class="fas fa-arrow-right"></i>
+                    </span>
+
+                  </a>
+                   <br>
+                   <br>
+                  <a class="bd-tw-button button is-success is-outlined"  target="_blank" href="https://resvey-limited.github.io/">
+                    <span>
+                      Read more
+                    </span>
+                    <span class="icon">
+                      <i class="fas fa-arrow-right"></i>
+                    </span>
+                  </a> on what we are doing to support <strong> Expanded Access </strong> to medication.
+                </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-light is-medium ">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Our Team
+           </h1>
+          <div class="columns">
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by4">
+                    <img src="test.jpg" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">Charles Besidonne</p>
+                      <p class="subtitle is-6">CEO, Lead Researcher</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by4">
+                    <img src="test.jpg" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">Pharma Terry Akagha</p>
+                      <p class="subtitle is-6">Researcher, Head of Partnerships</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by4">
+                    <img src="test.jpg" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">Oluwasewa Ogunkoya</p>
+                      <p class="subtitle is-6">Researcher, Head of Operations</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="columns">
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by4">
+                    <img src="test.jpg" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">Andrew Besidonne</p>
+                      <p class="subtitle is-6">Global Projects Lead</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by4">
+                    <img src="test.jpg" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">Bunmi Besidonne</p>
+                      <p class="subtitle is-6">Lead Social Responsibilty</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by4">
+                    <img src="test.jpg"   alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">Kingsley Besidonne</p>
+                      <p class="subtitle is-6">Researcher, Head of IT and Data Analytics</p>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>   
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer has-text-centered" style="background-color: #333333;">
+      <div class="container">
+         <div class="columns">
+          <div class="column ">
+           <strong style="color: white;"> &copy; Copyright 2020. RESVEY LTD </strong>
+          </div>
+
+          <!-- <div class="column ">
+            Contact Us
+          </div>
+          <div class="column ">
+            <div class="field is-grouped">
+              <p class="control">
+                <a class="bd-tw-button button is-info" data-social-network="Twitter"  target="_blank" href="https://twitter.com/resveyservices">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                  <span>
+                    Follow us Twitter
+                  </span>
+                </a>
+              </p>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="lib/main.js"></script>
+  </body>
+</html>
