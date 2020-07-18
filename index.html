@@ -15,8 +15,6 @@
     <div class="container-fluid" id="app">
       <nav class="navbar is-dark">
         <div class="navbar-brand">
-            <!-- <a class="navbar-item" href="">
-            </a> -->
           <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
             <span></span>
             <span></span>
@@ -25,9 +23,6 @@
         </div>
       
         <div id="navbarExampleTransparentExample" class="navbar-menu">
-          <div class="navbar-start">
-
-          </div>
           <div class="navbar-end">
             <a class="navbar-item"  v-on:click="home">
               <strong> Home</strong>
@@ -35,17 +30,12 @@
             <a class="navbar-item" v-on:click="about">
               <strong>About</strong>
             </a>
-
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link" href="">
                <strong>Our Services</strong>
               </a>
               <div class="navbar-dropdown is-boxed">
-                <!-- <a class="navbar-item" href="">
-                  Overview
-                </a> -->
-                <!-- <hr class="navbar-divider"> -->
-                <a class="navbar-item" href="">
+                <a class="navbar-item" href="https://resvey-limited.github.io/">
                   Resvey Clinical 
                 </a>
               </div>
@@ -68,28 +58,11 @@
               </div>
             </div>
           </div>
-          <!-- <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="field is-grouped">
-                <p class="control">
-                  <a class="bd-tw-button button is-info" data-social-network="Twitter"  target="_blank" href="https://twitter.com/resveyservices">
-                    <span class="icon">
-                      <i class="fab fa-twitter"></i>
-                    </span>
-                    <span>
-                      Follow us Twitter
-                    </span>
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div> -->
         </div>
       </nav>
     </div>
 
-    <section class="section" id="app-2">
-
+    <section class="section" id="app-2" style="background-color: bisque;">
       <div class="container" v-if="seenHome">
         <div class="columns">
           <div class="column is-8-desktop is-offset-2-desktop">
@@ -181,32 +154,45 @@
 
    
 
-   <section class="hero is-link is-medium" >
+   <section class="hero is-medium">
       <div class="hero-body">
-        <div class="container">
+        <div class="container-fluid">
           <div class="columns">
-            <div class="column is-8-desktop is-offset-2-desktop">
-              <h2 class="subtitle is-4" style="text-align: center;">
-                    <a class="bd-tw-button button is-success is-large"  target="_blank" href="https://resvey-limited.github.io/" >
+            <div class="column ">
+                <h2 class="subtitle is-4">
+                  <a class="bd-tw-button button is-success is-large "  target="_blank" href="https://resvey-limited.github.io/" >
                     <span>
                       Resvey Clinical EAP Portal
                     </span>
                     <span class="icon">
                       <i class="fas fa-arrow-right"></i>
                     </span>
-
                   </a>
-                   <br>
-                   <br>
-                  <a class="bd-tw-button button is-success is-outlined"  target="_blank" href="https://resvey-limited.github.io/">
-                    <span>
-                      Read more
-                    </span>
-                    <span class="icon">
-                      <i class="fas fa-arrow-right"></i>
-                    </span>
-                  </a> on what we are doing to support <strong> Expanded Access </strong> to medication.
+                  <br>
+                    <br>
+                    <a class="bd-tw-button button is-success is-outlined"  target="_blank" href="https://resvey-limited.github.io/">
+                      <span>
+                        Read more
+                      </span>
+                      <span class="icon">
+                        <i class="fas fa-arrow-right"></i>
+                      </span>
+                    </a> on what we are doing to support <strong> Expanded Access </strong> to medication.
+                    <br>
+                    <br>
+                    <a class="bd-tw-button button is-success is-outlined"  target="_blank" href="https://resvey-limited.github.io/">
+                      <span>
+                        Read more
+                      </span>
+                      <span class="icon">
+                        <i class="fas fa-arrow-right"></i>
+                      </span>
+                    </a> on what we are doing to improve <strong> Education.</strong>
                 </h2>
+            </div>
+            <div class="column">
+              <img src="survey.png" alt="RESVEY: Educational Technology" width="700" height="750">
+            </div>
             </div>
           </div>
         </div>
@@ -342,29 +328,9 @@
           <div class="column ">
            <strong style="color: white;"> &copy; Copyright 2020. RESVEY LTD </strong>
           </div>
-
-          <!-- <div class="column ">
-            Contact Us
-          </div>
-          <div class="column ">
-            <div class="field is-grouped">
-              <p class="control">
-                <a class="bd-tw-button button is-info" data-social-network="Twitter"  target="_blank" href="https://twitter.com/resveyservices">
-                  <span class="icon">
-                    <i class="fab fa-twitter"></i>
-                  </span>
-                  <span>
-                    Follow us Twitter
-                  </span>
-                </a>
-              </p>
-            </div>
-          </div> -->
-
         </div>
       </div>
     </footer>
-
     <script type="text/javascript" src="lib/main.js"></script>
   </body>
 </html>
